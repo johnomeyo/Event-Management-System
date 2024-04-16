@@ -1,0 +1,28 @@
+.head-texts {
+  display: flex;
+  margin: 5px 5px 0 10px;
+  justify-content: space-between;
+}
+.create-event-card {
+  text-align: center;
+  border: 1px solid rgb(204, 200, 200);
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  border-radius: 5px;
+}
+.create-event-card img {
+  width: 40%;
+}
+.create-event-card button {
+  background-color: transparent;
+  color: blue;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  font-size: 17px;
+}
+.create-event-card button:hover {
+  background-color: lightblue;
+  border-radius: 5px;
+}

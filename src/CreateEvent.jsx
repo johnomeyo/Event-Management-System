@@ -12,8 +12,10 @@ function CreateEventCard() {
   };
   return (
     <>
+      {openModal && <EventModal closeModal={setOpenModal} />}
       <span>&nbsp;</span>
       <p></p>
+
       <div className="create-event-card">
         <div className="head-texts">
           <p style={pStyle}>Events</p>
@@ -24,8 +26,9 @@ function CreateEventCard() {
         <img src={meet} alt="" />
         <h3>New Event</h3>
         <p>Broadcast to a larger audience using EMS for greater efficiency.</p>
+        <p></p>
+
       </div>
-      {openModal && <EventModal closeModal={setOpenModal}/>}
     </>
   );
 }

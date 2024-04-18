@@ -38,7 +38,7 @@
 }
 .modal-container {
   width: 600px;
-  overflow-y: auto; 
+  overflow-y: auto;
   height: 500px;
   background-color: white;
   display: flex;
@@ -63,26 +63,32 @@
 
 .select-style {
   padding: 8px;
-  border: 1px solid #ccc; 
+  border: 1px solid #ccc;
   border-radius: 4px;
-  font-size: 16px; 
-  width: 200px; 
+  font-size: 16px;
+  width: 200px;
 }
-textarea{
+textarea {
   padding: 8px;
   width: 100%;
   margin-right: 40px;
 }
-.close-btn{
+.close-btn {
   font-size: 20px;
   background-color: transparent;
   border: none;
 }
-.create-btn{
-background-color: blue;
-border: none;
-color: white;
-padding: 15px;
-border-radius: 7px;
-cursor: pointer;
+.create-btn {
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 15px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.image-picker {
+  text-align: center;
+}
+.file-ipt{
+  border: none;
 }

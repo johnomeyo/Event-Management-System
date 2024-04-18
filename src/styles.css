@@ -1,0 +1,34 @@
+.event-tile {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  background-color: lightgray;
+  margin: 20px;
+  border-radius: 5px;
+}
+.time-date {
+  background-color: palegoldenrod;
+  padding: 10px;
+  flex-grow: 0.3;
+  flex-basis: 200;
+  text-align: center;
+  margin: 20px;
+  border-radius: 5px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.event-info {
+  padding: 10px;
+}
+.add-to-calendar {
+  background-color: black;
+  color: white;
+  height: 40px;
+  border-radius: 5px;
+  align-self: center;
+  right: 0;
+  margin-left: auto;
+  margin-right: 20px;
+
+}

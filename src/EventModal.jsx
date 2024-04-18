@@ -1,4 +1,12 @@
+import ImagePicker from "./ImagePicker";
+
 function EventModal({ closeModal }) {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const payload = Object.fromEntries(formData);
+    console.log(payload);
+  };
   return (
     <div className="modalBackground">
       <div className="modal-container">
@@ -8,16 +16,9 @@ function EventModal({ closeModal }) {
             X
           </button>
         </div>
-        <div className="imagePick">
-          <span>&nbsp;</span>
-          <h2>Camera</h2>
-          <h3>Upload a cover image</h3>
-          <p>
-            Images help to display the message better, hence greater audience
-          </p>
-        </div>
+        <ImagePicker />
         <div className="body">
-          <form action="">
+          <form action="POST" onSubmit={handleSubmit}>
             <label htmlFor="event_format">Event Format</label>
             <select name="event_format" id="" className="select-style">
               <option value="">Select</option>
@@ -32,7 +33,6 @@ function EventModal({ closeModal }) {
             <textarea
               name="description"
               id=""
-              // cols="75"
               rows="10"
               placeholder="Ex: topics, schedule, etc."
             ></textarea>

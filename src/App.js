@@ -1,4 +1,4 @@
-import CreateEventCard from "./CreateEvent";
+import EventTile from "./EventTile";
 import "./index.css";
 import "./stylesheet.css";
 
@@ -8,9 +8,11 @@ function App() {
       {/* <div className="home-page">
         <CreateEventCard />
       </div> */}
-      <div>
-        <CreateEventCard/>
-      </div>
+      <h1>Events</h1>
+      <EventTile />
+      <EventTile />
+      <EventTile />
+      <EventTile />
     </>
   );
 }

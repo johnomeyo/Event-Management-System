@@ -27,7 +27,6 @@ function CreateEventCard() {
         <h3>New Event</h3>
         <p>Broadcast to a larger audience using EMS for greater efficiency.</p>
         <p></p>
-
       </div>
     </>
   );

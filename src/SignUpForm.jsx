@@ -1,10 +1,13 @@
+import { useNavigate } from "react-router-dom";
 function SignUpForm() {
-  const handleSubmit =(e) =>{
-    e.preventDefault()
-const formData = new FormData(e.target)
-const payload = Object.fromEntries(formData)
-console.log(payload);
-  }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const payload = Object.fromEntries(formData);
+    console.log(payload);
+  };
+
+  let routeTo = useNavigate();
 
   const getStarted = "Get started with Zoho Backstage";
 
@@ -47,7 +50,11 @@ console.log(payload);
         </label>
         <p>{dataStorage}</p>
         <span>&nbsp;</span>
-        <button type="submit" className="sbmt-btn">
+        <button
+          type="submit"
+          className="sbmt-btn"
+          onClick={() => routeTo("/create")}
+        >
           SIGN UP NOW
         </button>
       </form>
